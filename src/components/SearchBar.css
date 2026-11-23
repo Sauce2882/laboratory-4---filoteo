@@ -1,0 +1,10 @@
+.searchbar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.searchbar input { flex: 2 1 220px; }
+.searchbar select { flex: 1 1 160px; }
+.searchbar input, .searchbar select { padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
+.searchbar button { flex: 0 0 auto; padding: 10px 16px; border: none; border-radius: 6px; background: #1b5e20; color: #fff; cursor: pointer; }
+.searchbar button:hover { background: #2e7d32; }
+@media (max-width: 600px) {
+  .searchbar { flex-direction: column; }
+  .searchbar input, .searchbar select, .searchbar button { flex: 1 1 auto; width: 100%; box-sizing: border-box; }
+}
